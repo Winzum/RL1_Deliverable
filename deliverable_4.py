@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'deliverable_3.ui'
+# Form implementation generated from reading ui file 'deliverable_4.ui'
 #
 # Created by: PyQt5 UI code generator 5.13.0
 #
@@ -16,11 +16,11 @@ import webbrowser
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(1280, 720)
+        MainWindow.resize(1920, 1080)
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.weekbox = QtWidgets.QGroupBox(self.centralwidget)
-        self.weekbox.setGeometry(QtCore.QRect(-1, 69, 1281, 611))
+        self.weekbox.setGeometry(QtCore.QRect(-1, 69, 1921, 961))
         font = QtGui.QFont()
         font.setFamily("Lucida Sans Typewriter")
         font.setPointSize(24)
@@ -28,7 +28,7 @@ class Ui_MainWindow(object):
         self.weekbox.setAlignment(QtCore.Qt.AlignCenter)
         self.weekbox.setObjectName("weekbox")
         self.widget = QtWidgets.QWidget(self.weekbox)
-        self.widget.setGeometry(QtCore.QRect(0, 20, 1281, 91))
+        self.widget.setGeometry(QtCore.QRect(0, 20, 1921, 91))
         self.widget.setObjectName("widget")
         self.gridLayout__daylabels = QtWidgets.QGridLayout(self.widget)
         self.gridLayout__daylabels.setContentsMargins(0, 0, 0, 0)
@@ -47,20 +47,6 @@ class Ui_MainWindow(object):
         self.tuesday_label.setAlignment(QtCore.Qt.AlignCenter)
         self.tuesday_label.setObjectName("tuesday_label")
         self.gridLayout__daylabels.addWidget(self.tuesday_label, 0, 1, 1, 1)
-        self.wednesday_label = QtWidgets.QLabel(self.widget)
-        font = QtGui.QFont()
-        font.setPointSize(16)
-        self.wednesday_label.setFont(font)
-        self.wednesday_label.setAlignment(QtCore.Qt.AlignCenter)
-        self.wednesday_label.setObjectName("wednesday_label")
-        self.gridLayout__daylabels.addWidget(self.wednesday_label, 0, 2, 1, 1)
-        self.thursday_label = QtWidgets.QLabel(self.widget)
-        font = QtGui.QFont()
-        font.setPointSize(16)
-        self.thursday_label.setFont(font)
-        self.thursday_label.setAlignment(QtCore.Qt.AlignCenter)
-        self.thursday_label.setObjectName("thursday_label")
-        self.gridLayout__daylabels.addWidget(self.thursday_label, 0, 3, 1, 1)
         self.friday_label = QtWidgets.QLabel(self.widget)
         font = QtGui.QFont()
         font.setPointSize(16)
@@ -68,6 +54,20 @@ class Ui_MainWindow(object):
         self.friday_label.setAlignment(QtCore.Qt.AlignCenter)
         self.friday_label.setObjectName("friday_label")
         self.gridLayout__daylabels.addWidget(self.friday_label, 0, 4, 1, 1)
+        self.thursday_label = QtWidgets.QLabel(self.widget)
+        font = QtGui.QFont()
+        font.setPointSize(16)
+        self.thursday_label.setFont(font)
+        self.thursday_label.setAlignment(QtCore.Qt.AlignCenter)
+        self.thursday_label.setObjectName("thursday_label")
+        self.gridLayout__daylabels.addWidget(self.thursday_label, 0, 3, 1, 1)
+        self.wednesday_label = QtWidgets.QLabel(self.widget)
+        font = QtGui.QFont()
+        font.setPointSize(16)
+        self.wednesday_label.setFont(font)
+        self.wednesday_label.setAlignment(QtCore.Qt.AlignCenter)
+        self.wednesday_label.setObjectName("wednesday_label")
+        self.gridLayout__daylabels.addWidget(self.wednesday_label, 0, 2, 1, 1)
         self.saturday_label = QtWidgets.QLabel(self.widget)
         font = QtGui.QFont()
         font.setPointSize(16)
@@ -83,7 +83,7 @@ class Ui_MainWindow(object):
         self.sunday_label.setObjectName("sunday_label")
         self.gridLayout__daylabels.addWidget(self.sunday_label, 0, 6, 1, 1)
         self.widget1 = QtWidgets.QWidget(self.weekbox)
-        self.widget1.setGeometry(QtCore.QRect(0, 110, 1281, 501))
+        self.widget1.setGeometry(QtCore.QRect(0, 110, 1921, 851))
         self.widget1.setObjectName("widget1")
         self.gridLayout_weeklists = QtWidgets.QGridLayout(self.widget1)
         self.gridLayout_weeklists.setContentsMargins(0, 0, 0, 0)
@@ -136,14 +136,14 @@ class Ui_MainWindow(object):
         self.previous_button.setFont(font)
         self.previous_button.setObjectName("previous_button")
         self.next_button = QtWidgets.QPushButton(self.centralwidget)
-        self.next_button.setGeometry(QtCore.QRect(1140, 0, 141, 81))
+        self.next_button.setGeometry(QtCore.QRect(1780, 0, 141, 81))
         font = QtGui.QFont()
         font.setFamily("Lucida Sans")
         font.setPointSize(18)
         self.next_button.setFont(font)
         self.next_button.setObjectName("next_button")
         self.UULogo = QtWidgets.QLabel(self.centralwidget)
-        self.UULogo.setGeometry(QtCore.QRect(880, -10, 261, 111))
+        self.UULogo.setGeometry(QtCore.QRect(1520, -10, 261, 111))
         self.UULogo.setText("")
         self.UULogo.setPixmap(QtGui.QPixmap("UU_logo_EN_BLACK.png"))
         self.UULogo.setScaledContents(True)
@@ -162,7 +162,7 @@ class Ui_MainWindow(object):
         self.gridLayout_3.setObjectName("gridLayout_3")
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(MainWindow)
-        self.menubar.setGeometry(QtCore.QRect(0, 0, 1280, 21))
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 1920, 21))
         self.menubar.setObjectName("menubar")
         self.menuAbout = QtWidgets.QMenu(self.menubar)
         self.menuAbout.setObjectName("menuAbout")
@@ -178,6 +178,7 @@ class Ui_MainWindow(object):
         self.retranslateUi(MainWindow)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
+        
         self.actionInfo.triggered.connect(lambda: self.info_popup())
 
         self.main_df = open_excel_df("LeidseRijnNieuws_articles.xlsx")
@@ -199,6 +200,7 @@ class Ui_MainWindow(object):
         self.listWidget_friday.itemDoubleClicked.connect(lambda: self.showPopup(self.listWidget_friday))
         self.listWidget_saturday.itemDoubleClicked.connect(lambda: self.showPopup(self.listWidget_saturday))
         self.listWidget_sunday.itemDoubleClicked.connect(lambda: self.showPopup(self.listWidget_sunday))
+
 
     def info_popup(self):
         msg = QMessageBox()
@@ -222,7 +224,7 @@ class Ui_MainWindow(object):
             url= str(row['url'])
             msg.setStandardButtons(QMessageBox.Open|QMessageBox.Close)
             msg.setDefaultButton(QMessageBox.Close)
-            #msg.setInformativeText("Hier komt informatie over het artikel")
+            msg.setInformativeText(str(int(row['Like'])) + " Likes")
             msg.setDetailedText(row['content'])
             msg.accepted.connect(lambda: self.open_url(url))
             #msg.buttonClicked.connect(self.popup_button)
@@ -232,15 +234,16 @@ class Ui_MainWindow(object):
         webbrowser.open_new(url)
 
 
+
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
         self.weekbox.setTitle(_translate("MainWindow", "Week"))
         self.monday_label.setText(_translate("MainWindow", "Monday\ndate"))
         self.tuesday_label.setText(_translate("MainWindow", "Tuesday\ndate"))
-        self.wednesday_label.setText(_translate("MainWindow", "Wednesday\ndate"))
-        self.thursday_label.setText(_translate("MainWindow", "Thursday\ndate"))
         self.friday_label.setText(_translate("MainWindow", "Friday\ndate"))
+        self.thursday_label.setText(_translate("MainWindow", "Thursday\ndate"))
+        self.wednesday_label.setText(_translate("MainWindow", "Wednesday\ndate"))
         self.saturday_label.setText(_translate("MainWindow", "Saturday\ndate"))
         self.sunday_label.setText(_translate("MainWindow", "Sunday\ndate"))
         __sortingEnabled = self.listWidget_monday.isSortingEnabled()
@@ -258,9 +261,6 @@ class Ui_MainWindow(object):
         self.actionInfo.setText(_translate("MainWindow", "Info"))
         self.actionInfo.setStatusTip(_translate("MainWindow", "This shows you the info about the creators"))
         self.actionInfo.setShortcut(_translate("MainWindow", "Ctrl+I"))
-
-
-
 
     def retitle_labels(self):
         weekdays = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
@@ -357,15 +357,35 @@ class Ui_MainWindow(object):
 
     def generate_item(self, row):
         item = QtWidgets.QListWidgetItem()
+        likes = row['Like']
+        #print(row['Like'])
         font = QtGui.QFont()
-        font.setPointSize(16)
+        if likes < 10: 
+            font.setPointSize(30)
+            brush = QtGui.QBrush(QtGui.QColor(116, 255, 65))
+        elif likes < 50:
+            font.setPointSize(26)
+            brush = QtGui.QBrush(QtGui.QColor(115, 231, 127))
+        elif likes < 100:
+            font.setPointSize(22)
+            brush = QtGui.QBrush(QtGui.QColor(169, 218, 151))
+        elif likes < 200:
+            font.setPointSize(16)
+            brush = QtGui.QBrush(QtGui.QColor(167, 185, 160))
+        else:
+            font.setPointSize(12)
+            brush = QtGui.QBrush(QtGui.QColor(164, 164, 164))
+
+        brush.setStyle(QtCore.Qt.SolidPattern)
         item.setFont(font)
-        brush = QtGui.QBrush(QtGui.QColor(223, 223, 223))
-        brush.setStyle(QtCore.Qt.SolidPattern)
+        
         item.setBackground(brush)
-        brush = QtGui.QBrush(QtGui.QColor(62, 62, 62))
-        brush.setStyle(QtCore.Qt.SolidPattern)
-        item.setForeground(brush)
+        
+        
+        
+        # brush = QtGui.QBrush(QtGui.QColor(62, 62, 62))
+        # brush.setStyle(QtCore.Qt.SolidPattern)
+        # item.setForeground(brush)
         item.setText(row['title'])
         return item
 
