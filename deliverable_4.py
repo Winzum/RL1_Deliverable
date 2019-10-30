@@ -224,16 +224,28 @@ class Ui_MainWindow(object):
             url= str(row['url'])
             msg.setStandardButtons(QMessageBox.Open|QMessageBox.Close)
             msg.setDefaultButton(QMessageBox.Close)
-            msg.setInformativeText(str(int(row['Like'])) + " Likes")
-            msg.setDetailedText(row['content'])
+            info_string = ""
+            #print(row)
+            if(row['Like']):
+                if(row['Like'] > 0):
+                    info_string = str(int(row['Like'])) + " Likes"
+            if(row['comments']):
+                if(row['comments'] > 0):
+                    info_string = info_string + " " + str(int(row['comments'])) + " Comments"
+            if(row['share']):
+                if(row['share'] > 0):
+                    info_string = info_string + " " + str(int(row['share'])) + " Shares"
+
+            str(info_string)
+            print(info_string)
+            msg.setInformativeText(info_string)
+            msg.setDetailedText(str(row['content']))
             msg.accepted.connect(lambda: self.open_url(url))
             #msg.buttonClicked.connect(self.popup_button)
             x = msg.exec_()
 
     def open_url(self, url):
         webbrowser.open_new(url)
-
-
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
@@ -354,12 +366,12 @@ class Ui_MainWindow(object):
                 self.listWidget_sunday.addItem(self.generate_item(row))
                 #change color and size based on inverse popularity
 
-
     def generate_item(self, row):
         item = QtWidgets.QListWidgetItem()
         likes = row['Like']
         #print(row['Like'])
         font = QtGui.QFont()
+        #generate article item based on inverse popularity
         if likes < 10: 
             font.setPointSize(30)
             brush = QtGui.QBrush(QtGui.QColor(116, 255, 65))
